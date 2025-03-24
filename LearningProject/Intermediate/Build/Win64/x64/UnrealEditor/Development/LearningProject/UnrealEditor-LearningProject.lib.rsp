@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-LearningProject.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"E:\Unreal_Project\Tutorial\LearningProject\Intermediate\Build\Win64\x64\LearningProjectEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.obj"
+"E:\Unreal_Project\Tutorial\LearningProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\LearningProject\LearningProject.cpp.obj"
+"E:\Unreal_Project\Tutorial\LearningProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\LearningProject\Default.rc2.res"
+/OUT:"E:\Unreal_Project\Tutorial\LearningProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\LearningProject\UnrealEditor-LearningProject.lib"

@@ -1,4 +1,5 @@
 /I "."
+/I "E:\Unreal_Project\Tutorial\LearningProject\Intermediate\Build\Win64\UnrealEditor\Inc\LearningProject\UHT"
 /I "E:\Unreal_Project\Tutorial\LearningProject\Source"
 /I "Runtime\Core\Public"
 /I "Runtime\Core\Internal"

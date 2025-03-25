@@ -5,7 +5,11 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"E:/Unreal_Project/Tutorial/LearningProject/Content/ParagonGideon/NewWorld.umap"
+				"E:/Unreal_Project/Tutorial/LearningProject/Content/ParagonGideon/NewWorld.umap",
+				"E:/Unreal_Project/Tutorial/LearningProject/Content/Maps/Test_Level.umap",
+				"E:/Unreal_Project/Tutorial/LearningProject/Content/Maps/Test_Level1.umap",
+				"E:/Unreal_Project/Tutorial/LearningProject/Content/My_Character.uasset",
+				"E:/Unreal_Project/Tutorial/LearningProject/Content/C++/My_Character.uasset"
 			]
 		}
 	]

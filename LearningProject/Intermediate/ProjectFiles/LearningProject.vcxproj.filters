@@ -11,6 +11,9 @@
     <None Include="..\..\Source\LearningProjectEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.editorconfig" />
+    <None Include="..\..\.vsconfig" />
+    <None Include="..\..\shadertoolsconfig.json" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -36,6 +39,12 @@
       <Filter>Source\LearningProject</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\LearningProject\LearningProject.h">
+      <Filter>Source\LearningProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\LearningProject\SCharacter.cpp">
+      <Filter>Source\LearningProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\LearningProject\SCharacter.h">
       <Filter>Source\LearningProject</Filter>
     </ClInclude>
   </ItemGroup>

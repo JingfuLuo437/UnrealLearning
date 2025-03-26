@@ -27,6 +27,7 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 	void Moveforward(float Value);
+	void MoveRight(float Value);
 
 public:	
 	// Called every frame

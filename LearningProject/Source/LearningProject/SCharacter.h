@@ -28,6 +28,12 @@ protected:
 	virtual void BeginPlay() override;
 	void Moveforward(float Value);
 	void MoveRight(float Value);
+	void PrimaryAttack();
+	//void Jump();
+protected:
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<AActor> ProjectileClass;
+
 
 public:	
 	// Called every frame

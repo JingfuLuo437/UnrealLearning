@@ -37,7 +37,9 @@
             "e:\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\networkpredictioninterface.generated.h",
             "e:\\ue_5.4\\engine\\source\\runtime\\engine\\public\\charactermovementcomponentasync.h",
             "e:\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\charactermovementcomponentasync.generated.h",
-            "e:\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\charactermovementcomponent.generated.h"
+            "e:\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\charactermovementcomponent.generated.h",
+            "e:\\unreal_project\\tutorial\\learningproject\\source\\learningproject\\public\\smagicprojectile.h",
+            "e:\\unreal_project\\tutorial\\learningproject\\intermediate\\build\\win64\\unrealeditor\\inc\\learningproject\\uht\\smagicprojectile.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

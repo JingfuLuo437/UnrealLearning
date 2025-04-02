@@ -1,0 +1,30 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "e:\\unreal_project\\tutorial\\learningproject\\source\\learningproject\\private\\smagicprojectile.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\unreal_project\\tutorial\\learningproject\\intermediate\\build\\win64\\x64\\learningprojecteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "e:\\unreal_project\\tutorial\\learningproject\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\learningproject\\definitions.learningproject.h",
+            "e:\\unreal_project\\tutorial\\learningproject\\source\\learningproject\\public\\smagicprojectile.h",
+            "e:\\unreal_project\\tutorial\\learningproject\\intermediate\\build\\win64\\unrealeditor\\inc\\learningproject\\uht\\smagicprojectile.generated.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\components\\spherecomponent.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\components\\shapecomponent.h",
+            "e:\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\shapecomponent.generated.h",
+            "e:\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\spherecomponent.generated.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\particles\\particlesystemcomponent.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\particles\\particlesystem.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\particles\\particleperfstats.h",
+            "e:\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\particlesystem.generated.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\particles\\emitter.h",
+            "e:\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\emitter.generated.h",
+            "e:\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\particlesystemcomponent.generated.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\gameframework\\projectilemovementcomponent.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\gameframework\\movementcomponent.h",
+            "e:\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\movementcomponent.generated.h",
+            "e:\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\projectilemovementcomponent.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

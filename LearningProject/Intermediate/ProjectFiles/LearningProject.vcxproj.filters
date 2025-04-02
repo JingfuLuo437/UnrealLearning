@@ -53,6 +53,12 @@
     <ClCompile Include="..\..\Source\LearningProject\Private\SExplosiveBarrel.cpp">
       <Filter>Source\LearningProject\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\LearningProject\Private\SGameplayInterface.cpp">
+      <Filter>Source\LearningProject\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LearningProject\Private\SItemChest.cpp">
+      <Filter>Source\LearningProject\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\LearningProject\Private\SMagicProjectile.cpp">
       <Filter>Source\LearningProject\Private</Filter>
     </ClCompile>
@@ -60,6 +66,12 @@
       <UniqueIdentifier>{ABAA24C0-BB2F-30A8-802A-C5691D181936}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\LearningProject\Public\SExplosiveBarrel.h">
+      <Filter>Source\LearningProject\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LearningProject\Public\SGameplayInterface.h">
+      <Filter>Source\LearningProject\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LearningProject\Public\SItemChest.h">
       <Filter>Source\LearningProject\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\LearningProject\Public\SMagicProjectile.h">

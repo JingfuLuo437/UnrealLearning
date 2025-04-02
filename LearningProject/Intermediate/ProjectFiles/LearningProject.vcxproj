@@ -271,10 +271,18 @@
     <ClCompile Include="..\..\Source\LearningProject\Private\SExplosiveBarrel.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\LearningProject\Private\SGameplayInterface.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LearningProject\Private\SItemChest.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\LearningProject\Private\SMagicProjectile.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\LearningProject\Public\SExplosiveBarrel.h"/>
+    <ClInclude Include="..\..\Source\LearningProject\Public\SGameplayInterface.h"/>
+    <ClInclude Include="..\..\Source\LearningProject\Public\SItemChest.h"/>
     <ClInclude Include="..\..\Source\LearningProject\Public\SMagicProjectile.h"/>
   </ItemGroup>
   <PropertyGroup>

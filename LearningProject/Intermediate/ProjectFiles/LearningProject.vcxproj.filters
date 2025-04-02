@@ -62,6 +62,9 @@
     <ClCompile Include="..\..\Source\LearningProject\Private\SMagicProjectile.cpp">
       <Filter>Source\LearningProject\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\LearningProject\Private\SNewItemChest.cpp">
+      <Filter>Source\LearningProject\Private</Filter>
+    </ClCompile>
     <Filter Include="Source\LearningProject\Public">
       <UniqueIdentifier>{ABAA24C0-BB2F-30A8-802A-C5691D181936}</UniqueIdentifier>
     </Filter>
@@ -75,6 +78,9 @@
       <Filter>Source\LearningProject\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\LearningProject\Public\SMagicProjectile.h">
+      <Filter>Source\LearningProject\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LearningProject\Public\SNewItemChest.h">
       <Filter>Source\LearningProject\Public</Filter>
     </ClInclude>
   </ItemGroup>

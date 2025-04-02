@@ -3,11 +3,9 @@
 
 #include "SNewItemChest.h"
 #include "Components/StaticMeshComponent.h"
+#include "SInteractionComponent.h"
 
-void ASNewItemChest::Interact_Inplementation(APawn* InstigatorPawn)
-{
-	LidMesh->AddRelativeRotation(FRotator(100, 0, 0));
-}
+
 
 // Sets default values
 ASNewItemChest::ASNewItemChest()
@@ -20,10 +18,20 @@ ASNewItemChest::ASNewItemChest()
 	RootComponent = BaseMesh;
 	LidMesh = CreateDefaultSubobject<UStaticMeshComponent>("LidMesh");
 	LidMesh->SetupAttachment(BaseMesh);
+	//LidMesh->AddRelativeRotation(FRotator(100, 0, 0));
+	//LidMesh->SetRelativeRotation(FRotator(100, 0, 0));
 
 	
 
 }
+
+
+void ASNewItemChest::Interact_Implementation(APawn* InstigatorPawn)
+{
+	UE_LOG(LogTemp, Warning, TEXT("Interacting with chest lid."));
+	LidMesh->AddRelativeRotation(FRotator(100, 0, 0));
+}
+
 
 // Called when the game starts or when spawned
 void ASNewItemChest::BeginPlay()

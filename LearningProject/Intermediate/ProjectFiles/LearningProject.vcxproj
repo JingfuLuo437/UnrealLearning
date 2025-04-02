@@ -274,7 +274,7 @@
     <ClCompile Include="..\..\Source\LearningProject\Private\SGameplayInterface.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
-    <ClCompile Include="..\..\Source\LearningProject\Private\SItemChest.cpp">
+    <ClCompile Include="..\..\Source\LearningProject\Private\SInteractionComponent.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClCompile Include="..\..\Source\LearningProject\Private\SMagicProjectile.cpp">
@@ -285,7 +285,7 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\LearningProject\Public\SExplosiveBarrel.h"/>
     <ClInclude Include="..\..\Source\LearningProject\Public\SGameplayInterface.h"/>
-    <ClInclude Include="..\..\Source\LearningProject\Public\SItemChest.h"/>
+    <ClInclude Include="..\..\Source\LearningProject\Public\SInteractionComponent.h"/>
     <ClInclude Include="..\..\Source\LearningProject\Public\SMagicProjectile.h"/>
     <ClInclude Include="..\..\Source\LearningProject\Public\SNewItemChest.h"/>
   </ItemGroup>

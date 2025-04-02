@@ -6,6 +6,8 @@
 #include "GameFramework/SpringArmComponent.h"
 
 #include "GameFramework/CharacterMovementComponent.h"
+#include "SInteractionComponent.h"
+
 #include "SMagicProjectile.h"
 // Sets default values
 ASCharacter::ASCharacter()
@@ -19,6 +21,8 @@ ASCharacter::ASCharacter()
 
 	CameraComp = CreateDefaultSubobject<UCameraComponent>("Camera");
 	CameraComp->SetupAttachment(SpringArmComp);
+
+	InteractionComp = CreateDefaultSubobject<USInteractionComponent>("InteractionComp");
 
 	
 	GetCharacterMovement()->bOrientRotationToMovement = true;
@@ -62,12 +66,27 @@ void ASCharacter::PrimaryAttack()
 
 
 
+
+
 // Called every frame
 void ASCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
 }
+
+
+
+void ASCharacter::PrimaryInteract()
+{
+	
+	if(InteractionComp){
+		Jump();
+	InteractionComp->PrimaryInteract();
+	UE_LOG(LogTemp, Warning, TEXT("InteractionComp is valid."));
+	}
+}
+
 
 // Called to bind functionality to input
 void ASCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
@@ -82,6 +101,7 @@ void ASCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ASCharacter::Jump);
 
 	PlayerInputComponent->BindAction("PrimaryAttack", IE_Pressed, this, &ASCharacter::PrimaryAttack);
+	PlayerInputComponent->BindAction("PrimaryInteract", IE_Pressed, this, &ASCharacter::PrimaryInteract);
 
 
 }

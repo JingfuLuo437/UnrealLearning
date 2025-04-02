@@ -6,6 +6,8 @@
 #include "GameFramework/Actor.h"
 #include "Components/StaticMeshComponent.h"
 #include "SGameplayInterface.h"
+
+#include "SInteractionComponent.h"
 #include "SNewItemChest.generated.h"
 class UStaticMeshComponent;
 
@@ -13,7 +15,7 @@ UCLASS()
 class LEARNINGPROJECT_API ASNewItemChest : public AActor,public ISGameplayInterface
 {
 	GENERATED_BODY()
-	void Interact_Inplementation(APawn* InstigatorPawn);
+	void Interact_Implementation(APawn* InstigatorPawn);
 	
 public:	
 	// Sets default values for this actor's properties

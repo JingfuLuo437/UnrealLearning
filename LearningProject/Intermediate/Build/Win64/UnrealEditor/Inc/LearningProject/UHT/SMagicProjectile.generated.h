@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define LEARNINGPROJECT_SMagicProjectile_generated_h
 
-#define FID_Unreal_Project_Tutorial_LearningProject_Source_LearningProject_Public_SMagicProjectile_h_16_INCLASS_NO_PURE_DECLS \
+#define FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_Public_SMagicProjectile_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesASMagicProjectile(); \
 	friend struct Z_Construct_UClass_ASMagicProjectile_Statics; \
@@ -23,7 +23,7 @@ public: \
 	DECLARE_SERIALIZER(ASMagicProjectile)
 
 
-#define FID_Unreal_Project_Tutorial_LearningProject_Source_LearningProject_Public_SMagicProjectile_h_16_ENHANCED_CONSTRUCTORS \
+#define FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_Public_SMagicProjectile_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	ASMagicProjectile(ASMagicProjectile&&); \
@@ -35,12 +35,12 @@ public: \
 	NO_API virtual ~ASMagicProjectile();
 
 
-#define FID_Unreal_Project_Tutorial_LearningProject_Source_LearningProject_Public_SMagicProjectile_h_13_PROLOG
-#define FID_Unreal_Project_Tutorial_LearningProject_Source_LearningProject_Public_SMagicProjectile_h_16_GENERATED_BODY \
+#define FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_Public_SMagicProjectile_h_13_PROLOG
+#define FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_Public_SMagicProjectile_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Unreal_Project_Tutorial_LearningProject_Source_LearningProject_Public_SMagicProjectile_h_16_INCLASS_NO_PURE_DECLS \
-	FID_Unreal_Project_Tutorial_LearningProject_Source_LearningProject_Public_SMagicProjectile_h_16_ENHANCED_CONSTRUCTORS \
+	FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_Public_SMagicProjectile_h_16_INCLASS_NO_PURE_DECLS \
+	FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_Public_SMagicProjectile_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -48,7 +48,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> LEARNINGPROJECT_API UClass* StaticClass<class ASMagicProjectile>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Unreal_Project_Tutorial_LearningProject_Source_LearningProject_Public_SMagicProjectile_h
+#define CURRENT_FILE_ID FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_Public_SMagicProjectile_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

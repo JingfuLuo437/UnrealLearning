@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"E:\\Unreal_Project\\Tutorial\\LearningProject\\Source\\LearningProject\\LearningProject.Build.cs",
-		"E:\\Unreal_Project\\Tutorial\\LearningProject\\Source\\LearningProject.Target.cs",
-		"E:\\Unreal_Project\\Tutorial\\LearningProject\\Source\\LearningProjectEditor.Target.cs"
+		"C:\\CentennialCollege\\UnrealLearning\\LearningProject\\Source\\LearningProject\\LearningProject.Build.cs",
+		"C:\\CentennialCollege\\UnrealLearning\\LearningProject\\Source\\LearningProject.Target.cs",
+		"C:\\CentennialCollege\\UnrealLearning\\LearningProject\\Source\\LearningProjectEditor.Target.cs"
 	],
 	"EngineVersion": "5.4.4"
 }

@@ -81,7 +81,7 @@ void ASCharacter::PrimaryInteract()
 {
 	
 	if(InteractionComp){
-		Jump();
+		//Jump();
 	InteractionComp->PrimaryInteract();
 	UE_LOG(LogTemp, Warning, TEXT("InteractionComp is valid."));
 	}

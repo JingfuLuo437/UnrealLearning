@@ -117,14 +117,14 @@ ASCharacter::~ASCharacter() {}
 // End Class ASCharacter
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Unreal_Project_Tutorial_LearningProject_Source_LearningProject_SCharacter_h_Statics
+struct Z_CompiledInDeferFile_FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_SCharacter_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_ASCharacter, ASCharacter::StaticClass, TEXT("ASCharacter"), &Z_Registration_Info_UClass_ASCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASCharacter), 1030085018U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Project_Tutorial_LearningProject_Source_LearningProject_SCharacter_h_2250402614(TEXT("/Script/LearningProject"),
-	Z_CompiledInDeferFile_FID_Unreal_Project_Tutorial_LearningProject_Source_LearningProject_SCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Project_Tutorial_LearningProject_Source_LearningProject_SCharacter_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_SCharacter_h_2250402614(TEXT("/Script/LearningProject"),
+	Z_CompiledInDeferFile_FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_SCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_SCharacter_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

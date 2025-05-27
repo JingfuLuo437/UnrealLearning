@@ -147,7 +147,7 @@ struct Z_Construct_UClass_ASExplosiveBarrel_Statics
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASExplosiveBarrel_Statics::NewProp_MeshComp = { "MeshComp", nullptr, (EPropertyFlags)0x00100000000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASExplosiveBarrel, MeshComp), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MeshComp_MetaData), NewProp_MeshComp_MetaData) };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASExplosiveBarrel_Statics::NewProp_ForceComp = { "ForceComp", nullptr, (EPropertyFlags)0x00100000000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASExplosiveBarrel, ForceComp), Z_Construct_UClass_URadialForceComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ForceComp_MetaData), NewProp_ForceComp_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASExplosiveBarrel_Statics::NewProp_ForceComp = { "ForceComp", nullptr, (EPropertyFlags)0x00100000000a000d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASExplosiveBarrel, ForceComp), Z_Construct_UClass_URadialForceComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ForceComp_MetaData), NewProp_ForceComp_MetaData) };
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ASExplosiveBarrel_Statics::NewProp_ProjectileClass = { "ProjectileClass", nullptr, (EPropertyFlags)0x0024080000010001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASExplosiveBarrel, ProjectileClass), Z_Construct_UClass_UClass, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ProjectileClass_MetaData), NewProp_ProjectileClass_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASExplosiveBarrel_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASExplosiveBarrel_Statics::NewProp_MeshComp,
@@ -195,10 +195,10 @@ ASExplosiveBarrel::~ASExplosiveBarrel() {}
 struct Z_CompiledInDeferFile_FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_Public_SExplosiveBarrel_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ASExplosiveBarrel, ASExplosiveBarrel::StaticClass, TEXT("ASExplosiveBarrel"), &Z_Registration_Info_UClass_ASExplosiveBarrel, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASExplosiveBarrel), 1247320972U) },
+		{ Z_Construct_UClass_ASExplosiveBarrel, ASExplosiveBarrel::StaticClass, TEXT("ASExplosiveBarrel"), &Z_Registration_Info_UClass_ASExplosiveBarrel, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASExplosiveBarrel), 2653203690U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_Public_SExplosiveBarrel_h_773398091(TEXT("/Script/LearningProject"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_Public_SExplosiveBarrel_h_1836474016(TEXT("/Script/LearningProject"),
 	Z_CompiledInDeferFile_FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_Public_SExplosiveBarrel_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_Public_SExplosiveBarrel_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

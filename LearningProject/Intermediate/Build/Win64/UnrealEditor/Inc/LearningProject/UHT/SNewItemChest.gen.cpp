@@ -56,7 +56,7 @@ struct Z_Construct_UClass_ASNewItemChest_Statics
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASNewItemChest_Statics::NewProp_BaseMesh = { "BaseMesh", nullptr, (EPropertyFlags)0x00200800000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASNewItemChest, BaseMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_BaseMesh_MetaData), NewProp_BaseMesh_MetaData) };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASNewItemChest_Statics::NewProp_LidMesh = { "LidMesh", nullptr, (EPropertyFlags)0x00200800000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASNewItemChest, LidMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LidMesh_MetaData), NewProp_LidMesh_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASNewItemChest_Statics::NewProp_LidMesh = { "LidMesh", nullptr, (EPropertyFlags)0x00200800000a000d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASNewItemChest, LidMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LidMesh_MetaData), NewProp_LidMesh_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASNewItemChest_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASNewItemChest_Statics::NewProp_BaseMesh,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASNewItemChest_Statics::NewProp_LidMesh,
@@ -68,7 +68,7 @@ UObject* (*const Z_Construct_UClass_ASNewItemChest_Statics::DependentSingletons[
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ASNewItemChest_Statics::DependentSingletons) < 16);
 const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_ASNewItemChest_Statics::InterfaceParams[] = {
-	{ Z_Construct_UClass_USGameplayInterface_NoRegister, (int32)VTABLE_OFFSET(ASNewItemChest, ISGameplayInterface), false },  // 3202653327
+	{ Z_Construct_UClass_USGameplayInterface_NoRegister, (int32)VTABLE_OFFSET(ASNewItemChest, ISGameplayInterface), false },  // 264899564
 };
 const UECodeGen_Private::FClassParams Z_Construct_UClass_ASNewItemChest_Statics::ClassParams = {
 	&ASNewItemChest::StaticClass,
@@ -105,10 +105,10 @@ ASNewItemChest::~ASNewItemChest() {}
 struct Z_CompiledInDeferFile_FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_Public_SNewItemChest_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ASNewItemChest, ASNewItemChest::StaticClass, TEXT("ASNewItemChest"), &Z_Registration_Info_UClass_ASNewItemChest, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASNewItemChest), 4105125140U) },
+		{ Z_Construct_UClass_ASNewItemChest, ASNewItemChest::StaticClass, TEXT("ASNewItemChest"), &Z_Registration_Info_UClass_ASNewItemChest, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASNewItemChest), 2123423782U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_Public_SNewItemChest_h_2511202749(TEXT("/Script/LearningProject"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_Public_SNewItemChest_h_2701666053(TEXT("/Script/LearningProject"),
 	Z_CompiledInDeferFile_FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_Public_SNewItemChest_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_Public_SNewItemChest_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

@@ -21,7 +21,7 @@ public:
 	UPROPERTY(VisibleAnywhere)
 	UStaticMeshComponent* MeshComp;
 
-	UPROPERTY(VisibleAnywhere)
+	UPROPERTY(VisibleAnywhere,BlueprintReadWrite)
 	URadialForceComponent* ForceComp;
 
 

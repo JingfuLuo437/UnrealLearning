@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\centennialcollege\\unreallearning\\learningproject\\source\\learningproject\\private\\snewitemchest.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\centennialcollege\\unreallearning\\learningproject\\intermediate\\build\\win64\\x64\\learningprojecteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\centennialcollege\\unreallearning\\learningproject\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\learningproject\\definitions.learningproject.h",
+            "c:\\centennialcollege\\unreallearning\\learningproject\\source\\learningproject\\public\\snewitemchest.h",
+            "c:\\centennialcollege\\unreallearning\\learningproject\\source\\learningproject\\public\\sgameplayinterface.h",
+            "c:\\centennialcollege\\unreallearning\\learningproject\\intermediate\\build\\win64\\unrealeditor\\inc\\learningproject\\uht\\sgameplayinterface.generated.h",
+            "c:\\centennialcollege\\unreallearning\\learningproject\\source\\learningproject\\public\\sinteractioncomponent.h",
+            "c:\\centennialcollege\\unreallearning\\learningproject\\intermediate\\build\\win64\\unrealeditor\\inc\\learningproject\\uht\\sinteractioncomponent.generated.h",
+            "c:\\centennialcollege\\unreallearning\\learningproject\\intermediate\\build\\win64\\unrealeditor\\inc\\learningproject\\uht\\snewitemchest.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

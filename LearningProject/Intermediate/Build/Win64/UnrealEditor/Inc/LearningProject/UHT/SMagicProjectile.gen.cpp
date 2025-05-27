@@ -61,7 +61,7 @@ struct Z_Construct_UClass_ASMagicProjectile_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASMagicProjectile_Statics::NewProp_SphereComp = { "SphereComp", nullptr, (EPropertyFlags)0x00200800000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASMagicProjectile, SphereComp), Z_Construct_UClass_USphereComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SphereComp_MetaData), NewProp_SphereComp_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASMagicProjectile_Statics::NewProp_SphereComp = { "SphereComp", nullptr, (EPropertyFlags)0x00200800000a000d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASMagicProjectile, SphereComp), Z_Construct_UClass_USphereComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SphereComp_MetaData), NewProp_SphereComp_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASMagicProjectile_Statics::NewProp_ProjectileComp = { "ProjectileComp", nullptr, (EPropertyFlags)0x00200800000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASMagicProjectile, ProjectileComp), Z_Construct_UClass_UProjectileMovementComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ProjectileComp_MetaData), NewProp_ProjectileComp_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASMagicProjectile_Statics::NewProp_ParticleComp = { "ParticleComp", nullptr, (EPropertyFlags)0x00200800000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASMagicProjectile, ParticleComp), Z_Construct_UClass_UParticleSystemComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ParticleComp_MetaData), NewProp_ParticleComp_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASMagicProjectile_Statics::PropPointers[] = {
@@ -110,10 +110,10 @@ ASMagicProjectile::~ASMagicProjectile() {}
 struct Z_CompiledInDeferFile_FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_Public_SMagicProjectile_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ASMagicProjectile, ASMagicProjectile::StaticClass, TEXT("ASMagicProjectile"), &Z_Registration_Info_UClass_ASMagicProjectile, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASMagicProjectile), 2092604878U) },
+		{ Z_Construct_UClass_ASMagicProjectile, ASMagicProjectile::StaticClass, TEXT("ASMagicProjectile"), &Z_Registration_Info_UClass_ASMagicProjectile, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASMagicProjectile), 2904110711U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_Public_SMagicProjectile_h_1307572727(TEXT("/Script/LearningProject"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_Public_SMagicProjectile_h_1702648839(TEXT("/Script/LearningProject"),
 	Z_CompiledInDeferFile_FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_Public_SMagicProjectile_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_Public_SMagicProjectile_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

@@ -21,7 +21,7 @@ public:
 	ASMagicProjectile();
 
 protected:
-	UPROPERTY(VisibleAnywhere)
+	UPROPERTY(VisibleAnywhere,BlueprintReadWrite)
 	USphereComponent* SphereComp;
 	UPROPERTY(VisibleAnywhere)
 	UProjectileMovementComponent* ProjectileComp;

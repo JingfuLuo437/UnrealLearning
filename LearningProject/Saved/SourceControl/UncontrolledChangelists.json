@@ -5,6 +5,10 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"H:/Unreal/UnrealLearning/LearningProject/Content/C++/My_Character.uasset",
+				"H:/Unreal/UnrealLearning/LearningProject/Content/UI/CrossHair_widget.uasset",
+				"H:/Unreal/UnrealLearning/LearningProject/Content/UI/NewWidgetBlueprint.uasset",
+				"H:/Unreal/UnrealLearning/LearningProject/Content/ParagonGideon/Characters/Heroes/Gideon/Meshes/Gideon_Skeleton.uasset",
 				"C:/CentennialCollege/UnrealLearning/LearningProject/Content/C++/Lever_BP.uasset",
 				"C:/CentennialCollege/UnrealLearning/LearningProject/Content/Maps/Test_Level1.umap",
 				"C:/CentennialCollege/UnrealLearning/LearningProject/Content/C++/Explosive_Barrel.uasset",

@@ -1,8 +1,10 @@
 {
 	"SourceFiles": [
-		"C:\\CentennialCollege\\UnrealLearning\\LearningProject\\Source\\LearningProject\\LearningProject.Build.cs",
-		"C:\\CentennialCollege\\UnrealLearning\\LearningProject\\Source\\LearningProject.Target.cs",
-		"C:\\CentennialCollege\\UnrealLearning\\LearningProject\\Source\\LearningProjectEditor.Target.cs"
+		"H:\\Unreal\\UnrealLearning\\LearningProject\\Source\\LearningProject\\LearningProject.Build.cs",
+		"H:\\Unreal\\UnrealLearning\\LearningProject\\Plugins\\VisualStudioTools\\Source\\VisualStudioBlueprintDebuggerHelper\\VisualStudioBlueprintDebuggerHelper.Build.cs",
+		"H:\\Unreal\\UnrealLearning\\LearningProject\\Plugins\\VisualStudioTools\\Source\\VisualStudioTools\\VisualStudioTools.Build.cs",
+		"H:\\Unreal\\UnrealLearning\\LearningProject\\Source\\LearningProject.Target.cs",
+		"H:\\Unreal\\UnrealLearning\\LearningProject\\Source\\LearningProjectEditor.Target.cs"
 	],
 	"EngineVersion": "5.4.4"
 }

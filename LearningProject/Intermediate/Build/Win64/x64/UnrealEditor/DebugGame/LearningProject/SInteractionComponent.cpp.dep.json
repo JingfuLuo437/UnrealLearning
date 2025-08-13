@@ -1,0 +1,17 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "h:\\unreal\\unreallearning\\learningproject\\source\\learningproject\\private\\sinteractioncomponent.cpp",
+        "ProvidedModule": "",
+        "PCH": "h:\\unreal\\unreallearning\\learningproject\\intermediate\\build\\win64\\x64\\learningprojecteditor\\debuggame\\unrealed\\sharedpch.unrealed.project.nonoptimized.valapi.cpp20.h.pch",
+        "Includes": [
+            "h:\\unreal\\unreallearning\\learningproject\\intermediate\\build\\win64\\x64\\unrealeditor\\debuggame\\learningproject\\definitions.learningproject.h",
+            "h:\\unreal\\unreallearning\\learningproject\\source\\learningproject\\public\\sinteractioncomponent.h",
+            "h:\\unreal\\unreallearning\\learningproject\\intermediate\\build\\win64\\unrealeditor\\inc\\learningproject\\uht\\sinteractioncomponent.generated.h",
+            "h:\\unreal\\unreallearning\\learningproject\\source\\learningproject\\public\\sgameplayinterface.h",
+            "h:\\unreal\\unreallearning\\learningproject\\intermediate\\build\\win64\\unrealeditor\\inc\\learningproject\\uht\\sgameplayinterface.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

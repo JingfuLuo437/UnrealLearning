@@ -9,6 +9,7 @@
 class USpringArmComponent;
 class UCameraComponent;
 class USInteractionComponent;
+class UAnimMontage;
 
 UCLASS()
 class LEARNINGPROJECT_API ASCharacter : public ACharacter
@@ -29,12 +30,22 @@ protected:
 	UPROPERTY(VisibleAnywhere)
 	USInteractionComponent* InteractionComp;
 
+	UPROPERTY(EditAnywhere, Category = "Attack");
+	UAnimMontage* AttackAnim;
+
+	UPROPERTY(EditAnywhere, Category = "Attack");
+	UAnimMontage* AttackAnim_L;
+	FTimerHandle TimerHandle_PrimaryAttack;
+
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 	void Moveforward(float Value);
 	void MoveRight(float Value);
 	void PrimaryAttack();
 	void PrimaryInteract();
+	void PrimaryAttack_TimeElapsed();
+	void Judge();
+
 	//void Jump();
 protected:
 	UPROPERTY(EditAnywhere)

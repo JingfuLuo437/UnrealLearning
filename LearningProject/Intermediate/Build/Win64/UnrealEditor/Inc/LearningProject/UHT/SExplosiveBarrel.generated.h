@@ -17,11 +17,11 @@ struct FHitResult;
 #endif
 #define LEARNINGPROJECT_SExplosiveBarrel_generated_h
 
-#define FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_Public_SExplosiveBarrel_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_LearningProject_Source_LearningProject_Public_SExplosiveBarrel_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execOnHit);
 
 
-#define FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_Public_SExplosiveBarrel_h_16_INCLASS_NO_PURE_DECLS \
+#define FID_LearningProject_Source_LearningProject_Public_SExplosiveBarrel_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesASExplosiveBarrel(); \
 	friend struct Z_Construct_UClass_ASExplosiveBarrel_Statics; \
@@ -30,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(ASExplosiveBarrel)
 
 
-#define FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_Public_SExplosiveBarrel_h_16_ENHANCED_CONSTRUCTORS \
+#define FID_LearningProject_Source_LearningProject_Public_SExplosiveBarrel_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	ASExplosiveBarrel(ASExplosiveBarrel&&); \
@@ -42,13 +42,13 @@ public: \
 	NO_API virtual ~ASExplosiveBarrel();
 
 
-#define FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_Public_SExplosiveBarrel_h_13_PROLOG
-#define FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_Public_SExplosiveBarrel_h_16_GENERATED_BODY \
+#define FID_LearningProject_Source_LearningProject_Public_SExplosiveBarrel_h_13_PROLOG
+#define FID_LearningProject_Source_LearningProject_Public_SExplosiveBarrel_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_Public_SExplosiveBarrel_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_Public_SExplosiveBarrel_h_16_INCLASS_NO_PURE_DECLS \
-	FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_Public_SExplosiveBarrel_h_16_ENHANCED_CONSTRUCTORS \
+	FID_LearningProject_Source_LearningProject_Public_SExplosiveBarrel_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_LearningProject_Source_LearningProject_Public_SExplosiveBarrel_h_16_INCLASS_NO_PURE_DECLS \
+	FID_LearningProject_Source_LearningProject_Public_SExplosiveBarrel_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -56,7 +56,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> LEARNINGPROJECT_API UClass* StaticClass<class ASExplosiveBarrel>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_Public_SExplosiveBarrel_h
+#define CURRENT_FILE_ID FID_LearningProject_Source_LearningProject_Public_SExplosiveBarrel_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

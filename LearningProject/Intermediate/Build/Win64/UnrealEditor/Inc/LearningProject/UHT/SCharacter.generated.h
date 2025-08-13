@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define LEARNINGPROJECT_SCharacter_generated_h
 
-#define FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_SCharacter_h_16_INCLASS_NO_PURE_DECLS \
+#define FID_LearningProject_Source_LearningProject_SCharacter_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesASCharacter(); \
 	friend struct Z_Construct_UClass_ASCharacter_Statics; \
@@ -23,7 +23,7 @@ public: \
 	DECLARE_SERIALIZER(ASCharacter)
 
 
-#define FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_SCharacter_h_16_ENHANCED_CONSTRUCTORS \
+#define FID_LearningProject_Source_LearningProject_SCharacter_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	ASCharacter(ASCharacter&&); \
@@ -35,12 +35,12 @@ public: \
 	NO_API virtual ~ASCharacter();
 
 
-#define FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_SCharacter_h_13_PROLOG
-#define FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_SCharacter_h_16_GENERATED_BODY \
+#define FID_LearningProject_Source_LearningProject_SCharacter_h_14_PROLOG
+#define FID_LearningProject_Source_LearningProject_SCharacter_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_SCharacter_h_16_INCLASS_NO_PURE_DECLS \
-	FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_SCharacter_h_16_ENHANCED_CONSTRUCTORS \
+	FID_LearningProject_Source_LearningProject_SCharacter_h_17_INCLASS_NO_PURE_DECLS \
+	FID_LearningProject_Source_LearningProject_SCharacter_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -48,7 +48,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> LEARNINGPROJECT_API UClass* StaticClass<class ASCharacter>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_SCharacter_h
+#define CURRENT_FILE_ID FID_LearningProject_Source_LearningProject_SCharacter_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -16,6 +16,7 @@ ASExplosiveBarrel::ASExplosiveBarrel()
 	//ForceComp->Radius = 10000;
 	ForceComp->bImpulseVelChange = true;
 	ForceComp->bIgnoreOwningActor = false;
+	
 }
 
 // Called when the game starts or when spawned
@@ -29,18 +30,23 @@ void ASExplosiveBarrel::BeginPlay()
 
 void ASExplosiveBarrel::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
 {
-	
+
 	if (OtherActor && OtherActor->IsA(ProjectileClass)) // 检查类型
 	{
 		Explode(); // 只在碰撞是 AProjectile 时触发
-		UE_LOG(LogTemp, Warning, TEXT("Barrel Hit by: %s"), *OtherActor->GetName());
+		//UE_LOG(LogTemp, Warning, TEXT("Barrel Hit by: %s"), *OtherActor->GetName());
 	}
-	
 }
+
+
+
+
 
 void ASExplosiveBarrel::Explode()
 {
 	ForceComp->FireImpulse();
+	UE_LOG(LogTemp, Log,TEXT("On actor hit in explosive barrel"));
+	
 	
 }
 

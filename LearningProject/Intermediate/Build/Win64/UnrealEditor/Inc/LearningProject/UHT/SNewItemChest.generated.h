@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define LEARNINGPROJECT_SNewItemChest_generated_h
 
-#define FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_Public_SNewItemChest_h_17_INCLASS_NO_PURE_DECLS \
+#define FID_LearningProject_Source_LearningProject_Public_SNewItemChest_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesASNewItemChest(); \
 	friend struct Z_Construct_UClass_ASNewItemChest_Statics; \
@@ -24,7 +24,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<ASNewItemChest*>(this); }
 
 
-#define FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_Public_SNewItemChest_h_17_ENHANCED_CONSTRUCTORS \
+#define FID_LearningProject_Source_LearningProject_Public_SNewItemChest_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	ASNewItemChest(ASNewItemChest&&); \
@@ -36,12 +36,12 @@ public: \
 	NO_API virtual ~ASNewItemChest();
 
 
-#define FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_Public_SNewItemChest_h_14_PROLOG
-#define FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_Public_SNewItemChest_h_17_GENERATED_BODY \
+#define FID_LearningProject_Source_LearningProject_Public_SNewItemChest_h_14_PROLOG
+#define FID_LearningProject_Source_LearningProject_Public_SNewItemChest_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_Public_SNewItemChest_h_17_INCLASS_NO_PURE_DECLS \
-	FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_Public_SNewItemChest_h_17_ENHANCED_CONSTRUCTORS \
+	FID_LearningProject_Source_LearningProject_Public_SNewItemChest_h_17_INCLASS_NO_PURE_DECLS \
+	FID_LearningProject_Source_LearningProject_Public_SNewItemChest_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -49,7 +49,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> LEARNINGPROJECT_API UClass* StaticClass<class ASNewItemChest>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_CentennialCollege_UnrealLearning_LearningProject_Source_LearningProject_Public_SNewItemChest_h
+#define CURRENT_FILE_ID FID_LearningProject_Source_LearningProject_Public_SNewItemChest_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

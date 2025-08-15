@@ -7,10 +7,13 @@
 
 #include "GameFramework/CharacterMovementComponent.h"
 #include "SInteractionComponent.h"
+#include "PhysicsEngine/RadialForceComponent.h"
+#include "SAttributeComponent.h"
 
 #include "SMagicProjectile.h"
 // Sets default values
 FVector HandLocation;
+class URadialForceComponent;
 bool bSide;
 ASCharacter::ASCharacter()
 {
@@ -29,6 +32,8 @@ ASCharacter::ASCharacter()
 	
 	GetCharacterMovement()->bOrientRotationToMovement = true;
 	bUseControllerRotationYaw = false;
+
+	AttributeComp = CreateDefaultSubobject<USAttributeComponent>("AttributeComp");
 
 }
 
@@ -73,6 +78,87 @@ void ASCharacter::PrimaryAttack()
 	
 }
 
+void ASCharacter::SecondaryAttack()
+{
+	Judge();
+	if (bSide) {
+		PlayAnimMontage(AttackAnim);
+	}
+	else {
+		PlayAnimMontage(AttackAnim_L);
+	}
+
+
+
+	GetWorldTimerManager().SetTimer(TimerHandle_PrimaryAttack, this, &ASCharacter::Secondary_TimeElapsed, 0.2f);
+}
+
+void ASCharacter::Secondary_TimeElapsed()
+{
+	Judge();
+
+
+
+
+
+
+
+
+	FCollisionObjectQueryParams ObjectQueryParams;
+	ObjectQueryParams.AddObjectTypesToQuery(ECC_WorldStatic);
+	FHitResult Hit;
+	FVector Start = CameraComp->GetComponentLocation();
+	FVector End = CameraComp->GetComponentLocation() + CameraComp->GetForwardVector() * 100000.0f;
+
+
+
+	bool bResult = GetWorld()->LineTraceSingleByObjectType(Hit, Start, End, ObjectQueryParams);
+
+
+	FVector Dirction = (End - HandLocation).GetSafeNormal();
+	FVector Dirction1 = (Hit.Location - HandLocation).GetSafeNormal();
+	FRotator  Rot;
+	if (bResult) {
+		Rot = Dirction1.Rotation();
+
+	}
+	else {
+		Rot = Dirction.Rotation();
+	}
+	//UE_LOG(LogTemp, Warning, TEXT("the hit position is %s "), *Hit.Location.ToString());
+	//UE_LOG(LogTemp, Warning, TEXT("the start pos is %s"), *Start.ToString());
+	//UE_LOG(LogTemp, Warning, TEXT("the end pos is %s "), *End.ToString());
+
+
+
+	FTransform SpawnTm = FTransform(Rot, HandLocation);
+	FActorSpawnParameters SpawnParams;
+	SpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
+	SpawnParams.Instigator = this;
+	SpawnParams.Owner = this;
+	
+	AActor* SpawnedActor = GetWorld()->SpawnActor<AActor>(SuctionProjectileClass, SpawnTm, SpawnParams);
+	UE_LOG(LogTemp, Warning, TEXT("owner is %s"), *SpawnedActor->Owner->GetName());
+	/*//URadialForceComponent* ForceComp;
+	TArray<URadialForceComponent*> ForceComponents;
+	SpawnedActor->GetComponents<URadialForceComponent>(ForceComponents);
+	SpawnedActor->SetOwner(this);
+
+	for (URadialForceComponent* ForceComp : ForceComponents)
+	{
+		// 操作ForceComponent，例如设置参数
+		//ForceComp->owner
+		//ForceComp->bIgnoreOwningActor = true;
+		UE_LOG(LogTemp, Warning, TEXT("the owners %s "), *ForceComp->GetOwner()->GetName());
+	}
+	*/
+	//UPrimitiveComponent* CollisionComp = Cast<UPrimitiveComponent>(SpawnedActor->GetComponentByClass(UPrimitiveComponent::StaticClass()));
+	 //UE_LOG(LogTemp, Warning, TEXT("the end pos is %s "), *SpawnParams.Instigator->GetName());
+	//CollisionComp->IgnoreActorWhenMoving(this, true);
+
+
+}
+
 
 
 
@@ -93,7 +179,7 @@ void ASCharacter::Tick(float DeltaTime)
 	FColor ActorColor = FColor::Red;
 	FColor CameraColor = FColor::Blue;
 
-	DrawDebugDirectionalArrow(
+	/*DrawDebugDirectionalArrow(
 		GetWorld(),
 		ActorLocation,
 		ActorLocation + ActorForward * ArrowSize,
@@ -114,7 +200,7 @@ void ASCharacter::Tick(float DeltaTime)
 		-1.0f,
 		0,
 		2.0f
-	);
+	);*/
 
 
 }
@@ -139,12 +225,50 @@ void ASCharacter::PrimaryAttack_TimeElapsed()
 	
 
 	
-	FTransform SpawnTm = FTransform(GetControlRotation(), HandLocation);
+	
+	
+
+
+	FCollisionObjectQueryParams ObjectQueryParams;
+	ObjectQueryParams.AddObjectTypesToQuery(ECC_WorldStatic);
+	 FHitResult Hit;
+	FVector Start = CameraComp->GetComponentLocation();
+	FVector End = CameraComp->GetComponentLocation() + CameraComp->GetForwardVector() * 100000.0f;
+	
+	
+	
+	bool bResult = GetWorld()->LineTraceSingleByObjectType(Hit,Start,End,ObjectQueryParams);
+
+	
+	FVector Dirction = (End - HandLocation).GetSafeNormal();
+	FVector Dirction1 = (Hit.Location - HandLocation).GetSafeNormal();
+	FRotator  Rot;
+	if (bResult) {
+		Rot = Dirction1.Rotation();
+	
+	}
+	else {
+		Rot = Dirction.Rotation();
+	}
+	//UE_LOG(LogTemp, Warning, TEXT("the hit position is %s "), *Hit.Location.ToString());
+	//UE_LOG(LogTemp, Warning, TEXT("the start pos is %s"), *Start.ToString());
+	//UE_LOG(LogTemp, Warning, TEXT("the end pos is %s "), *End.ToString());
+
+	
+
+	FTransform SpawnTm = FTransform(Rot, HandLocation);
 	FActorSpawnParameters SpawnParams;
 	SpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
 	SpawnParams.Instigator = this;
+	//SpawnParams.Owner = this;
+	AActor* SpawnedActor = GetWorld()->SpawnActor<AActor>(ProjectileClass, SpawnTm, SpawnParams);
+	
+	UPrimitiveComponent* CollisionComp = Cast<UPrimitiveComponent>(SpawnedActor->GetComponentByClass(UPrimitiveComponent::StaticClass()));
+	 //UE_LOG(LogTemp, Warning, TEXT("the end pos is %s "), *SpawnParams.Instigator->GetName());
+	CollisionComp->IgnoreActorWhenMoving(this, true);
+	
 
-	GetWorld()->SpawnActor<AActor>(ProjectileClass, SpawnTm, SpawnParams);
+
 }
 
 void ASCharacter::Judge()
@@ -160,14 +284,14 @@ void ASCharacter::Judge()
 	if (CrossZ >= 0) {
 		HandLocation = GetMesh()->GetSocketLocation("Muzzle_01");
 
-		UE_LOG(LogTemp, Warning, TEXT("right"));
-		bSide = false;
+		//UE_LOG(LogTemp, Warning, TEXT("right"));
+		bSide = true;
 
 	}
 	else {
 		HandLocation = GetMesh()->GetSocketLocation("Muzzle_02");
-		UE_LOG(LogTemp, Warning, TEXT("left"));
-		bSide = true;
+		//UE_LOG(LogTemp, Warning, TEXT("left"));
+		bSide = false;
 	}
 }
 
@@ -185,6 +309,7 @@ void ASCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ASCharacter::Jump);
 
 	PlayerInputComponent->BindAction("PrimaryAttack", IE_Pressed, this, &ASCharacter::PrimaryAttack);
+	PlayerInputComponent->BindAction("SecondaryAttack", IE_Pressed, this, &ASCharacter::SecondaryAttack);
 	PlayerInputComponent->BindAction("PrimaryInteract", IE_Pressed, this, &ASCharacter::PrimaryInteract);
 
 

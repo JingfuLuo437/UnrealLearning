@@ -22,8 +22,8 @@ ASMagicProjectile::ASMagicProjectile()
 	ParticleComp->SetCollisionProfileName("Projectile");
 
 	ProjectileComp = CreateDefaultSubobject<UProjectileMovementComponent>("MovementComp");
-	ProjectileComp->InitialSpeed = 1000.0f;
-	ProjectileComp->bRotationFollowsVelocity = true;
+	ProjectileComp->InitialSpeed = 10000.0f;
+	ProjectileComp->bRotationFollowsVelocity = false;
 	ProjectileComp->bInitialVelocityInLocalSpace = true;
 }
 

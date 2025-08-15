@@ -67,13 +67,13 @@ void USInteractionComponent::PrimaryInteract()
 			if (HitActor->Implements<USGameplayInterface>()) {
 				APawn* MyPawn = Cast<APawn>(MyOwner);
 				ISGameplayInterface::Execute_Interact(HitActor, MyPawn);
-				UE_LOG(LogTemp, Warning, TEXT("HitActor: %s"), *HitActor->GetName());
-				UE_LOG(LogTemp, Warning, TEXT("PawnActor: %s"), *MyPawn->GetName());
+				//UE_LOG(LogTemp, Warning, TEXT("HitActor: %s"), *HitActor->GetName());
+				//UE_LOG(LogTemp, Warning, TEXT("PawnActor: %s"), *MyPawn->GetName());
 			}
 		}
-		DrawDebugSphere(GetWorld(), Hit.ImpactPoint, Radius, 32, LineColor, false, 2.0f);
-	}
+		//DrawDebugSphere(GetWorld(), Hit.ImpactPoint, Radius, 32, LineColor, false, 2.0f);
+	} 
 	
-	DrawDebugLine(GetWorld(), EyeLocation, End, LineColor, false, 2.0f, 0, 2.0f);
+	//DrawDebugLine(GetWorld(), EyeLocation, End, LineColor, false, 2.0f, 0, 2.0f);
 	
 }

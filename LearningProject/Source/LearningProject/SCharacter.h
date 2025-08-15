@@ -5,11 +5,17 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "SInteractionComponent.h"
+#include "SAttributeComponent.h"
+
+
+
 #include "SCharacter.generated.h"
+
 class USpringArmComponent;
 class UCameraComponent;
 class USInteractionComponent;
 class UAnimMontage;
+class USAttributeComponent;
 
 UCLASS()
 class LEARNINGPROJECT_API ASCharacter : public ACharacter
@@ -30,18 +36,24 @@ protected:
 	UPROPERTY(VisibleAnywhere)
 	USInteractionComponent* InteractionComp;
 
-	UPROPERTY(EditAnywhere, Category = "Attack");
+	UPROPERTY(EditAnywhere, Category = "Attack")
 	UAnimMontage* AttackAnim;
 
-	UPROPERTY(EditAnywhere, Category = "Attack");
+	UPROPERTY(EditAnywhere, Category = "Attack")
 	UAnimMontage* AttackAnim_L;
 	FTimerHandle TimerHandle_PrimaryAttack;
+
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Components")
+	USAttributeComponent* AttributeComp;
 
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 	void Moveforward(float Value);
 	void MoveRight(float Value);
 	void PrimaryAttack();
+	void SecondaryAttack();
+	void Secondary_TimeElapsed();
 	void PrimaryInteract();
 	void PrimaryAttack_TimeElapsed();
 	void Judge();
@@ -50,6 +62,9 @@ protected:
 protected:
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<AActor> ProjectileClass;
+
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<AActor> SuctionProjectileClass;
 
 
 public:	

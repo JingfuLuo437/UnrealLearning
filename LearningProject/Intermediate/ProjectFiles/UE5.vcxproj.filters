@@ -1,27 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Programs">
-      <UniqueIdentifier>{975D1C13-E767-3FE6-B144-E3439BBA958B}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Programs\UnrealBuildTool">
-      <UniqueIdentifier>{E614AFF7-A3C2-3091-9CFE-1172CC22AD29}</UniqueIdentifier>
-    </Filter>
-    <None Include="C:\Program Files\Epic Games\UE_5.4\Engine\Saved\UnrealBuildTool\BuildConfiguration.Schema.xsd">
-      <Filter>Programs\UnrealBuildTool</Filter>
-    </None>
-    <Filter Include="Config">
-      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Config\UnrealBuildTool">
-      <UniqueIdentifier>{B3FB6B6B-2795-3453-AD6D-EC00E1A7D68C}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Config\UnrealBuildTool\Global (AppData)">
-      <UniqueIdentifier>{FAE54D99-341E-330F-91BB-12B2FC82877B}</UniqueIdentifier>
-    </Filter>
-    <None Include="C:\Users\57671\AppData\Roaming\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml">
-      <Filter>Config\UnrealBuildTool\Global (AppData)</Filter>
-    </None>
     <Filter Include="Source">
       <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
     </Filter>
@@ -31,6 +10,9 @@
     <None Include="C:\Program Files\Epic Games\UE_5.4\Engine\Source\UnrealGame.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
     <None Include="C:\Program Files\Epic Games\UE_5.4\Engine\Config\Base.ini">
       <Filter>Config</Filter>
     </None>
@@ -300,15 +282,6 @@
     </None>
     <None Include="C:\Program Files\Epic Games\UE_5.4\Engine\Config\Windows\Windows_SDK.json">
       <Filter>Config\Windows</Filter>
-    </None>
-    <Filter Include="Programs\UnrealHeaderTool">
-      <UniqueIdentifier>{8E005C73-230B-3957-BD0C-A4BEAD7ACEFB}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Programs\UnrealHeaderTool\Config">
-      <UniqueIdentifier>{7D019188-778F-3AE7-B3F8-91E65E9A8327}</UniqueIdentifier>
-    </Filter>
-    <None Include="C:\Program Files\Epic Games\UE_5.4\Engine\Programs\UnrealHeaderTool\Config\DefaultEngine.ini">
-      <Filter>Programs\UnrealHeaderTool\Config</Filter>
     </None>
     <Filter Include="Platforms">
       <UniqueIdentifier>{ED49A36C-4FD5-37E5-A2AC-E11BEF4F21CF}</UniqueIdentifier>
@@ -48307,6 +48280,36 @@
     <ClInclude Include="C:\Program Files\Epic Games\UE_5.4\Engine\Source\Editor\WorldPartitionEditor\Public\WorldPartition\HLOD\HLODLoaderAdapter.h">
       <Filter>Source\Editor\WorldPartitionEditor\Public\WorldPartition\HLOD</Filter>
     </ClInclude>
+    <Filter Include="Source\Programs">
+      <UniqueIdentifier>{0F184A70-4BE6-3DC6-A2F0-BB57E13A383B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Programs\Shared">
+      <UniqueIdentifier>{DC1CFDCE-D3F8-385F-B7A6-B1B7BFD3A3E1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Programs\Shared\EpicGames.Perforce.Native">
+      <UniqueIdentifier>{E1E84321-8FFF-375B-9883-4D8665502F52}</UniqueIdentifier>
+    </Filter>
+    <None Include="C:\Program Files\Epic Games\UE_5.4\Engine\Source\Programs\Shared\EpicGames.Perforce.Native\BuildLibrary.xml">
+      <Filter>Source\Programs\Shared\EpicGames.Perforce.Native</Filter>
+    </None>
+    <ClCompile Include="C:\Program Files\Epic Games\UE_5.4\Engine\Source\Programs\Shared\EpicGames.Perforce.Native\Client.cpp">
+      <Filter>Source\Programs\Shared\EpicGames.Perforce.Native</Filter>
+    </ClCompile>
+    <None Include="C:\Program Files\Epic Games\UE_5.4\Engine\Source\Programs\Shared\EpicGames.Perforce.Native\DotNetPerforceLib.Build.cs">
+      <Filter>Source\Programs\Shared\EpicGames.Perforce.Native</Filter>
+    </None>
+    <None Include="C:\Program Files\Epic Games\UE_5.4\Engine\Source\Programs\Shared\EpicGames.Perforce.Native\Makefile">
+      <Filter>Source\Programs\Shared\EpicGames.Perforce.Native</Filter>
+    </None>
+    <None Include="C:\Program Files\Epic Games\UE_5.4\Engine\Source\Programs\Shared\EpicGames.Perforce.Native\Makefile-Mac">
+      <Filter>Source\Programs\Shared\EpicGames.Perforce.Native</Filter>
+    </None>
+    <Filter Include="Source\Programs\Shared\EpicGames.Perforce.Native\ThirdParty">
+      <UniqueIdentifier>{5DDE84D5-7B70-305D-91A7-94B10EC8EFE6}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="C:\Program Files\Epic Games\UE_5.4\Engine\Source\Programs\Shared\EpicGames.Perforce.Native\ThirdParty\gzip.h">
+      <Filter>Source\Programs\Shared\EpicGames.Perforce.Native\ThirdParty</Filter>
+    </ClInclude>
     <Filter Include="Source\Runtime">
       <UniqueIdentifier>{0F638EE2-304F-3F47-BA5F-B2A3F5103733}</UniqueIdentifier>
     </Filter>
@@ -89215,6 +89218,39 @@
     <Filter Include="Source\Runtime\Online\Experimental">
       <UniqueIdentifier>{681475C6-99C1-3839-82FC-285D8BC5E8B4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\Runtime\Online\Experimental\EventLoopTests">
+      <UniqueIdentifier>{B4B43CF9-37BA-3867-A8D7-6902AA638983}</UniqueIdentifier>
+    </Filter>
+    <None Include="C:\Program Files\Epic Games\UE_5.4\Engine\Source\Runtime\Online\Experimental\EventLoopTests\EventLoopUnitTests.Build.cs">
+      <Filter>Source\Runtime\Online\Experimental\EventLoopTests</Filter>
+    </None>
+    <Filter Include="Source\Runtime\Online\Experimental\EventLoopTests\Tests">
+      <UniqueIdentifier>{A2751239-3D23-31E1-8A66-41D223893D8B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Runtime\Online\Experimental\EventLoopTests\Tests\EventLoop">
+      <UniqueIdentifier>{DD11900A-715A-346E-B9A5-093C3A321714}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="C:\Program Files\Epic Games\UE_5.4\Engine\Source\Runtime\Online\Experimental\EventLoopTests\Tests\EventLoop\BSDSocketTypesPrivate.h">
+      <Filter>Source\Runtime\Online\Experimental\EventLoopTests\Tests\EventLoop</Filter>
+    </ClInclude>
+    <ClCompile Include="C:\Program Files\Epic Games\UE_5.4\Engine\Source\Runtime\Online\Experimental\EventLoopTests\Tests\EventLoop\EventLoopHandleTests.cpp">
+      <Filter>Source\Runtime\Online\Experimental\EventLoopTests\Tests\EventLoop</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\Epic Games\UE_5.4\Engine\Source\Runtime\Online\Experimental\EventLoopTests\Tests\EventLoop\EventLoopIOManagerBSDSocketSelectTests.cpp">
+      <Filter>Source\Runtime\Online\Experimental\EventLoopTests\Tests\EventLoop</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\Epic Games\UE_5.4\Engine\Source\Runtime\Online\Experimental\EventLoopTests\Tests\EventLoop\EventLoopLLTModule.cpp">
+      <Filter>Source\Runtime\Online\Experimental\EventLoopTests\Tests\EventLoop</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\Epic Games\UE_5.4\Engine\Source\Runtime\Online\Experimental\EventLoopTests\Tests\EventLoop\EventLoopManagedStorageTests.cpp">
+      <Filter>Source\Runtime\Online\Experimental\EventLoopTests\Tests\EventLoop</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\Epic Games\UE_5.4\Engine\Source\Runtime\Online\Experimental\EventLoopTests\Tests\EventLoop\EventLoopTests.cpp">
+      <Filter>Source\Runtime\Online\Experimental\EventLoopTests\Tests\EventLoop</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\Epic Games\UE_5.4\Engine\Source\Runtime\Online\Experimental\EventLoopTests\Tests\EventLoop\EventLoopTimerTests.cpp">
+      <Filter>Source\Runtime\Online\Experimental\EventLoopTests\Tests\EventLoop</Filter>
+    </ClCompile>
     <Filter Include="Source\Runtime\Online\Experimental\EventLoop">
       <UniqueIdentifier>{EBED4324-76C8-394E-8702-7DB1743E5F6D}</UniqueIdentifier>
     </Filter>

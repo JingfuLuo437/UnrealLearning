@@ -17,13 +17,13 @@ void EmptyLinkFunctionForGeneratedCodeLearningProject_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xA234B486,
-				0xC9E60201,
+				0x531C4768,
+				0xB39148DF,
 				METADATA_PARAMS(0, nullptr)
 			};
 			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_LearningProject.OuterSingleton, PackageParams);
 		}
 		return Z_Registration_Info_UPackage__Script_LearningProject.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_LearningProject(Z_Construct_UPackage__Script_LearningProject, TEXT("/Script/LearningProject"), Z_Registration_Info_UPackage__Script_LearningProject, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xA234B486, 0xC9E60201));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_LearningProject(Z_Construct_UPackage__Script_LearningProject, TEXT("/Script/LearningProject"), Z_Registration_Info_UPackage__Script_LearningProject, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x531C4768, 0xB39148DF));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

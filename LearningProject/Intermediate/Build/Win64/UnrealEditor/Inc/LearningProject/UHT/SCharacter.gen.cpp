@@ -18,6 +18,7 @@ ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 LEARNINGPROJECT_API UClass* Z_Construct_UClass_ASCharacter();
 LEARNINGPROJECT_API UClass* Z_Construct_UClass_ASCharacter_NoRegister();
+LEARNINGPROJECT_API UClass* Z_Construct_UClass_USAttributeComponent_NoRegister();
 LEARNINGPROJECT_API UClass* Z_Construct_UClass_USInteractionComponent_NoRegister();
 UPackage* Z_Construct_UPackage__Script_LearningProject();
 // End Cross Module References
@@ -62,7 +63,16 @@ struct Z_Construct_UClass_ASCharacter_Statics
 		{ "Category", "Attack" },
 		{ "ModuleRelativePath", "SCharacter.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AttributeComp_MetaData[] = {
+		{ "Category", "Components" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "SCharacter.h" },
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ProjectileClass_MetaData[] = {
+		{ "Category", "SCharacter" },
+		{ "ModuleRelativePath", "SCharacter.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SuctionProjectileClass_MetaData[] = {
 		{ "Category", "SCharacter" },
 		{ "ModuleRelativePath", "SCharacter.h" },
 	};
@@ -72,7 +82,9 @@ struct Z_Construct_UClass_ASCharacter_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_InteractionComp;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_AttackAnim;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_AttackAnim_L;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_AttributeComp;
 	static const UECodeGen_Private::FClassPropertyParams NewProp_ProjectileClass;
+	static const UECodeGen_Private::FClassPropertyParams NewProp_SuctionProjectileClass;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -85,14 +97,18 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASCharacter_St
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASCharacter_Statics::NewProp_InteractionComp = { "InteractionComp", nullptr, (EPropertyFlags)0x00200800000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASCharacter, InteractionComp), Z_Construct_UClass_USInteractionComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InteractionComp_MetaData), NewProp_InteractionComp_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASCharacter_Statics::NewProp_AttackAnim = { "AttackAnim", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASCharacter, AttackAnim), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AttackAnim_MetaData), NewProp_AttackAnim_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASCharacter_Statics::NewProp_AttackAnim_L = { "AttackAnim_L", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASCharacter, AttackAnim_L), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AttackAnim_L_MetaData), NewProp_AttackAnim_L_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASCharacter_Statics::NewProp_AttributeComp = { "AttributeComp", nullptr, (EPropertyFlags)0x002008000008001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASCharacter, AttributeComp), Z_Construct_UClass_USAttributeComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AttributeComp_MetaData), NewProp_AttributeComp_MetaData) };
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ASCharacter_Statics::NewProp_ProjectileClass = { "ProjectileClass", nullptr, (EPropertyFlags)0x0024080000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASCharacter, ProjectileClass), Z_Construct_UClass_UClass, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ProjectileClass_MetaData), NewProp_ProjectileClass_MetaData) };
+const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ASCharacter_Statics::NewProp_SuctionProjectileClass = { "SuctionProjectileClass", nullptr, (EPropertyFlags)0x0024080000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASCharacter, SuctionProjectileClass), Z_Construct_UClass_UClass, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SuctionProjectileClass_MetaData), NewProp_SuctionProjectileClass_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASCharacter_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASCharacter_Statics::NewProp_SpringArmComp,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASCharacter_Statics::NewProp_CameraComp,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASCharacter_Statics::NewProp_InteractionComp,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASCharacter_Statics::NewProp_AttackAnim,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASCharacter_Statics::NewProp_AttackAnim_L,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASCharacter_Statics::NewProp_AttributeComp,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASCharacter_Statics::NewProp_ProjectileClass,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASCharacter_Statics::NewProp_SuctionProjectileClass,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ASCharacter_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_ASCharacter_Statics::DependentSingletons[])() = {
@@ -135,10 +151,10 @@ ASCharacter::~ASCharacter() {}
 struct Z_CompiledInDeferFile_FID_LearningProject_Source_LearningProject_SCharacter_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ASCharacter, ASCharacter::StaticClass, TEXT("ASCharacter"), &Z_Registration_Info_UClass_ASCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASCharacter), 1652355812U) },
+		{ Z_Construct_UClass_ASCharacter, ASCharacter::StaticClass, TEXT("ASCharacter"), &Z_Registration_Info_UClass_ASCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASCharacter), 2920003353U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LearningProject_Source_LearningProject_SCharacter_h_221362275(TEXT("/Script/LearningProject"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LearningProject_Source_LearningProject_SCharacter_h_5537965(TEXT("/Script/LearningProject"),
 	Z_CompiledInDeferFile_FID_LearningProject_Source_LearningProject_SCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_LearningProject_Source_LearningProject_SCharacter_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

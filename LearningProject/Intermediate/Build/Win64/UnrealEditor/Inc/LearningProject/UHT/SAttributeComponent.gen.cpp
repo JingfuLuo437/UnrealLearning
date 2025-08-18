@@ -10,11 +10,78 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeSAttributeComponent() {}
 
 // Begin Cross Module References
+ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_UActorComponent();
 LEARNINGPROJECT_API UClass* Z_Construct_UClass_USAttributeComponent();
 LEARNINGPROJECT_API UClass* Z_Construct_UClass_USAttributeComponent_NoRegister();
+LEARNINGPROJECT_API UFunction* Z_Construct_UDelegateFunction_LearningProject_OnHealthChange__DelegateSignature();
 UPackage* Z_Construct_UPackage__Script_LearningProject();
 // End Cross Module References
+
+// Begin Delegate FOnHealthChange
+struct Z_Construct_UDelegateFunction_LearningProject_OnHealthChange__DelegateSignature_Statics
+{
+	struct _Script_LearningProject_eventOnHealthChange_Parms
+	{
+		AActor* InstigatorActor;
+		USAttributeComponent* OwningComp;
+		float NewHealth;
+		float Delta;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/SAttributeComponent.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OwningComp_MetaData[] = {
+		{ "EditInline", "true" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_InstigatorActor;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_OwningComp;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_NewHealth;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_Delta;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_LearningProject_OnHealthChange__DelegateSignature_Statics::NewProp_InstigatorActor = { "InstigatorActor", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_LearningProject_eventOnHealthChange_Parms, InstigatorActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_LearningProject_OnHealthChange__DelegateSignature_Statics::NewProp_OwningComp = { "OwningComp", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_LearningProject_eventOnHealthChange_Parms, OwningComp), Z_Construct_UClass_USAttributeComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OwningComp_MetaData), NewProp_OwningComp_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UDelegateFunction_LearningProject_OnHealthChange__DelegateSignature_Statics::NewProp_NewHealth = { "NewHealth", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_LearningProject_eventOnHealthChange_Parms, NewHealth), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UDelegateFunction_LearningProject_OnHealthChange__DelegateSignature_Statics::NewProp_Delta = { "Delta", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_LearningProject_eventOnHealthChange_Parms, Delta), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_LearningProject_OnHealthChange__DelegateSignature_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_LearningProject_OnHealthChange__DelegateSignature_Statics::NewProp_InstigatorActor,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_LearningProject_OnHealthChange__DelegateSignature_Statics::NewProp_OwningComp,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_LearningProject_OnHealthChange__DelegateSignature_Statics::NewProp_NewHealth,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_LearningProject_OnHealthChange__DelegateSignature_Statics::NewProp_Delta,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_LearningProject_OnHealthChange__DelegateSignature_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_LearningProject_OnHealthChange__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_LearningProject, nullptr, "OnHealthChange__DelegateSignature", nullptr, nullptr, Z_Construct_UDelegateFunction_LearningProject_OnHealthChange__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_LearningProject_OnHealthChange__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_LearningProject_OnHealthChange__DelegateSignature_Statics::_Script_LearningProject_eventOnHealthChange_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_LearningProject_OnHealthChange__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_LearningProject_OnHealthChange__DelegateSignature_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UDelegateFunction_LearningProject_OnHealthChange__DelegateSignature_Statics::_Script_LearningProject_eventOnHealthChange_Parms) < MAX_uint16);
+UFunction* Z_Construct_UDelegateFunction_LearningProject_OnHealthChange__DelegateSignature()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_LearningProject_OnHealthChange__DelegateSignature_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+void FOnHealthChange_DelegateWrapper(const FMulticastScriptDelegate& OnHealthChange, AActor* InstigatorActor, USAttributeComponent* OwningComp, float NewHealth, float Delta)
+{
+	struct _Script_LearningProject_eventOnHealthChange_Parms
+	{
+		AActor* InstigatorActor;
+		USAttributeComponent* OwningComp;
+		float NewHealth;
+		float Delta;
+	};
+	_Script_LearningProject_eventOnHealthChange_Parms Parms;
+	Parms.InstigatorActor=InstigatorActor;
+	Parms.OwningComp=OwningComp;
+	Parms.NewHealth=NewHealth;
+	Parms.Delta=Delta;
+	OnHealthChange.ProcessMulticastDelegate<UObject>(&Parms);
+}
+// End Delegate FOnHealthChange
 
 // Begin Class USAttributeComponent Function ApllyHealthChange
 struct Z_Construct_UFunction_USAttributeComponent_ApllyHealthChange_Statics
@@ -27,13 +94,7 @@ struct Z_Construct_UFunction_USAttributeComponent_ApllyHealthChange_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Attributes" },
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "// Called every frame\n" },
-#endif
 		{ "ModuleRelativePath", "Public/SAttributeComponent.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "Called every frame" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_Delta;
@@ -107,12 +168,22 @@ struct Z_Construct_UClass_USAttributeComponent_Statics
 		{ "ToolTip", "Called when the game starts" },
 #endif
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnHealthChanged_MetaData[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// Called every frame\n" },
+#endif
+		{ "ModuleRelativePath", "Public/SAttributeComponent.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Called every frame" },
+#endif
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_Health;
+	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnHealthChanged;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_USAttributeComponent_ApllyHealthChange, "ApllyHealthChange" }, // 3375421733
+		{ &Z_Construct_UFunction_USAttributeComponent_ApllyHealthChange, "ApllyHealthChange" }, // 1705196249
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -121,8 +192,10 @@ struct Z_Construct_UClass_USAttributeComponent_Statics
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_USAttributeComponent_Statics::NewProp_Health = { "Health", nullptr, (EPropertyFlags)0x0020080000010015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USAttributeComponent, Health), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Health_MetaData), NewProp_Health_MetaData) };
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_USAttributeComponent_Statics::NewProp_OnHealthChanged = { "OnHealthChanged", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USAttributeComponent, OnHealthChanged), Z_Construct_UDelegateFunction_LearningProject_OnHealthChange__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnHealthChanged_MetaData), NewProp_OnHealthChanged_MetaData) }; // 714423671
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_USAttributeComponent_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USAttributeComponent_Statics::NewProp_Health,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USAttributeComponent_Statics::NewProp_OnHealthChanged,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_USAttributeComponent_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_USAttributeComponent_Statics::DependentSingletons[])() = {
@@ -165,10 +238,10 @@ USAttributeComponent::~USAttributeComponent() {}
 struct Z_CompiledInDeferFile_FID_LearningProject_Source_LearningProject_Public_SAttributeComponent_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_USAttributeComponent, USAttributeComponent::StaticClass, TEXT("USAttributeComponent"), &Z_Registration_Info_UClass_USAttributeComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USAttributeComponent), 2378455828U) },
+		{ Z_Construct_UClass_USAttributeComponent, USAttributeComponent::StaticClass, TEXT("USAttributeComponent"), &Z_Registration_Info_UClass_USAttributeComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USAttributeComponent), 2142239339U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LearningProject_Source_LearningProject_Public_SAttributeComponent_h_2659471547(TEXT("/Script/LearningProject"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LearningProject_Source_LearningProject_Public_SAttributeComponent_h_745516716(TEXT("/Script/LearningProject"),
 	Z_CompiledInDeferFile_FID_LearningProject_Source_LearningProject_Public_SAttributeComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_LearningProject_Source_LearningProject_Public_SAttributeComponent_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

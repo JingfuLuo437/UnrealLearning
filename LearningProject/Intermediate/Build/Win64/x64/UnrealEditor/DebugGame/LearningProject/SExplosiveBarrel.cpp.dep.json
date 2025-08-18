@@ -17,7 +17,11 @@
             "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\character.generated.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\physicsengine\\radialforcecomponent.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\radialforcecomponent.generated.h",
-            "h:\\unreal\\unreallearning\\learningproject\\intermediate\\build\\win64\\unrealeditor\\inc\\learningproject\\uht\\sexplosivebarrel.generated.h"
+            "h:\\unreal\\unreallearning\\learningproject\\intermediate\\build\\win64\\unrealeditor\\inc\\learningproject\\uht\\sexplosivebarrel.generated.h",
+            "h:\\unreal\\unreallearning\\learningproject\\source\\learningproject\\public\\sprojectilebaseclass.h",
+            "h:\\unreal\\unreallearning\\learningproject\\source\\learningproject\\public\\sattributecomponent.h",
+            "h:\\unreal\\unreallearning\\learningproject\\intermediate\\build\\win64\\unrealeditor\\inc\\learningproject\\uht\\sattributecomponent.generated.h",
+            "h:\\unreal\\unreallearning\\learningproject\\intermediate\\build\\win64\\unrealeditor\\inc\\learningproject\\uht\\sprojectilebaseclass.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

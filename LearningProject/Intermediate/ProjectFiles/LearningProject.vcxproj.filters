@@ -149,6 +149,9 @@
     <ClCompile Include="..\..\Source\LearningProject\Private\SAttributeComponent.cpp">
       <Filter>Source\LearningProject\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\LearningProject\Private\SDashProjectile.cpp">
+      <Filter>Source\LearningProject\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\LearningProject\Private\SExplosiveBarrel.cpp">
       <Filter>Source\LearningProject\Private</Filter>
     </ClCompile>
@@ -164,6 +167,18 @@
     <ClCompile Include="..\..\Source\LearningProject\Private\SNewItemChest.cpp">
       <Filter>Source\LearningProject\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\LearningProject\Private\SNormalProjectile.cpp">
+      <Filter>Source\LearningProject\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LearningProject\Private\SProjectileBaseClass.cpp">
+      <Filter>Source\LearningProject\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LearningProject\Private\SSuctionProjectile.cpp">
+      <Filter>Source\LearningProject\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LearningProject\Private\STargetDummy.cpp">
+      <Filter>Source\LearningProject\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\LearningProject\Private\S_SuctionProjectile.cpp">
       <Filter>Source\LearningProject\Private</Filter>
     </ClCompile>
@@ -171,6 +186,9 @@
       <UniqueIdentifier>{ABAA24C0-BB2F-30A8-802A-C5691D181936}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\LearningProject\Public\SAttributeComponent.h">
+      <Filter>Source\LearningProject\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LearningProject\Public\SDashProjectile.h">
       <Filter>Source\LearningProject\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\LearningProject\Public\SExplosiveBarrel.h">
@@ -186,6 +204,18 @@
       <Filter>Source\LearningProject\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\LearningProject\Public\SNewItemChest.h">
+      <Filter>Source\LearningProject\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LearningProject\Public\SNormalProjectile.h">
+      <Filter>Source\LearningProject\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LearningProject\Public\SProjectileBaseClass.h">
+      <Filter>Source\LearningProject\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LearningProject\Public\SSuctionProjectile.h">
+      <Filter>Source\LearningProject\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LearningProject\Public\STargetDummy.h">
       <Filter>Source\LearningProject\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\LearningProject\Public\S_SuctionProjectile.h">

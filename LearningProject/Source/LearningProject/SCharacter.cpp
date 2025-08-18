@@ -135,10 +135,10 @@ void ASCharacter::Secondary_TimeElapsed()
 	FActorSpawnParameters SpawnParams;
 	SpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
 	SpawnParams.Instigator = this;
-	SpawnParams.Owner = this;
+	
 	
 	AActor* SpawnedActor = GetWorld()->SpawnActor<AActor>(SuctionProjectileClass, SpawnTm, SpawnParams);
-	UE_LOG(LogTemp, Warning, TEXT("owner is %s"), *SpawnedActor->Owner->GetName());
+	//UE_LOG(LogTemp, Warning, TEXT("owner is %s"), *SpawnedActor->Owner->GetName());
 	/*//URadialForceComponent* ForceComp;
 	TArray<URadialForceComponent*> ForceComponents;
 	SpawnedActor->GetComponents<URadialForceComponent>(ForceComponents);

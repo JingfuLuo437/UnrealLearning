@@ -2,6 +2,7 @@
 
 
 #include "SExplosiveBarrel.h"
+#include "SProjectileBaseClass.h"
 
 // Sets default values
 ASExplosiveBarrel::ASExplosiveBarrel()
@@ -37,6 +38,8 @@ void ASExplosiveBarrel::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherAc
 		//UE_LOG(LogTemp, Warning, TEXT("Barrel Hit by: %s"), *OtherActor->GetName());
 	}
 }
+
+
 
 
 

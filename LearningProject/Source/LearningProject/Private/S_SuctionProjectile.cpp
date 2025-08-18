@@ -32,6 +32,8 @@ AS_SuctionProjectile::AS_SuctionProjectile()
 	ProjectileMovementComp->InitialSpeed = 10000.0f;
 	ProjectileMovementComp->bRotationFollowsVelocity = false;
 	ProjectileMovementComp->bInitialVelocityInLocalSpace = true;
+
+
 	
 
 }

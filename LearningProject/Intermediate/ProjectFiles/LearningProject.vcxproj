@@ -601,6 +601,11 @@
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_2)</ForcedIncludeFiles>
       <AdditionalOptions>$(ClCompile_AdditionalOptions_1)</AdditionalOptions>
     </ClCompile>
+    <ClCompile Include="..\..\Source\LearningProject\Private\SDashProjectile.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_2)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_2)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions_1)</AdditionalOptions>
+    </ClCompile>
     <ClCompile Include="..\..\Source\LearningProject\Private\SExplosiveBarrel.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_2)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_2)</ForcedIncludeFiles>
@@ -626,17 +631,42 @@
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_2)</ForcedIncludeFiles>
       <AdditionalOptions>$(ClCompile_AdditionalOptions_1)</AdditionalOptions>
     </ClCompile>
+    <ClCompile Include="..\..\Source\LearningProject\Private\SNormalProjectile.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_2)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_2)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions_1)</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LearningProject\Private\SProjectileBaseClass.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_2)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_2)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions_1)</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LearningProject\Private\SSuctionProjectile.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_2)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_2)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions_1)</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LearningProject\Private\STargetDummy.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_2)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_2)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions_1)</AdditionalOptions>
+    </ClCompile>
     <ClCompile Include="..\..\Source\LearningProject\Private\S_SuctionProjectile.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_2)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_2)</ForcedIncludeFiles>
       <AdditionalOptions>$(ClCompile_AdditionalOptions_1)</AdditionalOptions>
     </ClCompile>
     <ClInclude Include="..\..\Source\LearningProject\Public\SAttributeComponent.h"/>
+    <ClInclude Include="..\..\Source\LearningProject\Public\SDashProjectile.h"/>
     <ClInclude Include="..\..\Source\LearningProject\Public\SExplosiveBarrel.h"/>
     <ClInclude Include="..\..\Source\LearningProject\Public\SGameplayInterface.h"/>
     <ClInclude Include="..\..\Source\LearningProject\Public\SInteractionComponent.h"/>
     <ClInclude Include="..\..\Source\LearningProject\Public\SMagicProjectile.h"/>
     <ClInclude Include="..\..\Source\LearningProject\Public\SNewItemChest.h"/>
+    <ClInclude Include="..\..\Source\LearningProject\Public\SNormalProjectile.h"/>
+    <ClInclude Include="..\..\Source\LearningProject\Public\SProjectileBaseClass.h"/>
+    <ClInclude Include="..\..\Source\LearningProject\Public\SSuctionProjectile.h"/>
+    <ClInclude Include="..\..\Source\LearningProject\Public\STargetDummy.h"/>
     <ClInclude Include="..\..\Source\LearningProject\Public\S_SuctionProjectile.h"/>
   </ItemGroup>
   <PropertyGroup>

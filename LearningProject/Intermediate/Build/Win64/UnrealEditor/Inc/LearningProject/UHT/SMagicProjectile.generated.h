@@ -9,10 +9,17 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AActor;
+class UPrimitiveComponent;
+struct FHitResult;
 #ifdef LEARNINGPROJECT_SMagicProjectile_generated_h
 #error "SMagicProjectile.generated.h already included, missing '#pragma once' in SMagicProjectile.h"
 #endif
 #define LEARNINGPROJECT_SMagicProjectile_generated_h
+
+#define FID_LearningProject_Source_LearningProject_Public_SMagicProjectile_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execOnActorOverlap);
+
 
 #define FID_LearningProject_Source_LearningProject_Public_SMagicProjectile_h_16_INCLASS_NO_PURE_DECLS \
 private: \
@@ -39,6 +46,7 @@ public: \
 #define FID_LearningProject_Source_LearningProject_Public_SMagicProjectile_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
+	FID_LearningProject_Source_LearningProject_Public_SMagicProjectile_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
 	FID_LearningProject_Source_LearningProject_Public_SMagicProjectile_h_16_INCLASS_NO_PURE_DECLS \
 	FID_LearningProject_Source_LearningProject_Public_SMagicProjectile_h_16_ENHANCED_CONSTRUCTORS \
 private: \
